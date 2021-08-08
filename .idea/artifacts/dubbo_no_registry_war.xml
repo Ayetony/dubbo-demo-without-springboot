@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="dubbo-no-registry:war">
+    <output-path>$PROJECT_DIR$/dubbo-no-registry/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>dubbo-no-registry</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="dubbo-no-registry-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="dubbo-no-registry:war exploded" />
+    </root>
+  </artifact>
+</component>

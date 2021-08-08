@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/dubbo-consumer" />
+    <file type="web" url="file://$PROJECT_DIR$/dubbo-no-registry" />
+    <file type="web" url="file://$PROJECT_DIR$/dubbo-zk-consumer" />
+    <file type="web" url="file://$PROJECT_DIR$/dubbo-zk-provider" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/dubbo-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo-no-registry/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo-zk-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo-zk-provider/pom.xml" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="14" project-jdk-type="JavaSDK" />
 </project>

@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="11" />
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="dubbo-zk-provider" />
+        <module name="dubbo-interface" />
+        <module name="dubbo-consumer" />
+        <module name="dubbo-no-registry" />
+        <module name="dubbo-zk-consumer" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="11">
+      <module name="dubbo-consumer" target="1.8" />
+      <module name="dubbo-interface" target="8" />
+      <module name="dubbo-no-registry" target="1.8" />
+      <module name="dubbo-zk-consumer" target="1.7" />
+      <module name="dubbo-zk-provider" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
