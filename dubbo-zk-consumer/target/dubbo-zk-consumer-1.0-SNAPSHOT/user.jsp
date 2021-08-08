@@ -2,12 +2,12 @@
 <%@ page isELIgnored="false" %>
 <html>
 <head>
-    <title>user detail</title>
+    <title>user</title>
 </head>
 <body>
 <div>
-    <p><span>id</span>${ user.id }</p>
-    <p><span>username</span>${ user.userName }</p>
+    <p>id ： ${ user.id }</p>
+    <p>username ： ${ user.userName }</p>
 </div>
 </body>
 </html>
