@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://dubbo.apache.org/schema/dubbo http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
+<!--    服务声明要确保唯一性-->
+    <dubbo:application name="01-link-userservice-provider"/>
+
+<!--    协议端口-->
+    <dubbo:protocol name="dubbo" port="20880"/>
+
+<!--    暴露的服务接口,设置其对应的引用实现 N/A 表示直连，不使用注册中心 -->
+    <dubbo:service interface="com.learn.dubbo.service.UserService" ref="userService" registry="N/A"/>
+
+    <bean name="userService" class="com.learn.dubbo.service.impl.UserServiceImpl"/>
+</beans>
