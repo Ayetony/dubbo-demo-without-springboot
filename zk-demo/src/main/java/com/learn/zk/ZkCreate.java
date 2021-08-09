@@ -20,7 +20,7 @@ public class ZkCreate {
     public void asyncCreateNode(String path, String data, ArrayList<ACL> acl) throws InterruptedException {
         ZooKeeper zooKeeper = ZKConn.getZkClientConnection();
         if(zooKeeper == null){
-            throw new RuntimeException("zookeeper disconnected error");
+            throw new RuntimeException("zookeeper connect error");
         }
         zooKeeper.create(path, data.getBytes(StandardCharsets.UTF_8), acl, CreateMode.PERSISTENT,
                 (rc, ctxPath, ctx, name) -> System.out.println("rc:"+rc+",path:"+ ctxPath +",ctx:"+ctx+"name,"+name),
