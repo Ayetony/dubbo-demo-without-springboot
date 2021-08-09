@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/dubbo-no-registry/dubbo-no-registry.iml" filepath="$PROJECT_DIR$/dubbo-no-registry/dubbo-no-registry.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-zk-consumer/dubbo-zk-consumer.iml" filepath="$PROJECT_DIR$/dubbo-zk-consumer/dubbo-zk-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-zk-provider/dubbo-zk-provider.iml" filepath="$PROJECT_DIR$/dubbo-zk-provider/dubbo-zk-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zk-demo/zk-demo.iml" filepath="$PROJECT_DIR$/zk-demo/zk-demo.iml" />
     </modules>
   </component>
 </project>

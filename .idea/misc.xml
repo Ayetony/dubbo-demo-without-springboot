@@ -14,6 +14,7 @@
         <option value="$PROJECT_DIR$/dubbo-no-registry/pom.xml" />
         <option value="$PROJECT_DIR$/dubbo-zk-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/dubbo-zk-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/zk-demo/pom.xml" />
       </list>
     </option>
   </component>

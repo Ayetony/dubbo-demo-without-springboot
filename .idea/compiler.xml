@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="zk-demo" />
         <module name="dubbo-zk-provider" />
         <module name="dubbo-interface" />
         <module name="dubbo-consumer" />
@@ -19,6 +20,7 @@
       <module name="dubbo-no-registry" target="1.8" />
       <module name="dubbo-zk-consumer" target="1.7" />
       <module name="dubbo-zk-provider" target="1.8" />
+      <module name="zk-demo" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
