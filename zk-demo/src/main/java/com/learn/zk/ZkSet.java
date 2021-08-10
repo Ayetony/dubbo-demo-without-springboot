@@ -13,7 +13,7 @@ public class ZkSet {
     public Stat setNodeData(String path, String data, int version) throws InterruptedException, KeeperException {
         ZooKeeper zooKeeper = ZKConn.getZkClientConnection();
         if(zooKeeper == null){
-            throw new RuntimeException("zookeeper disconnected error");
+            throw new RuntimeException("zookeeper connect error");
         }
         return zooKeeper.setData(path,data.getBytes(StandardCharsets.UTF_8),version);
     }

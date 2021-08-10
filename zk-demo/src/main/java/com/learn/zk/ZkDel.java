@@ -8,14 +8,9 @@ public class ZkDel {
     public void asyncDelNode(String path,int version) throws InterruptedException {
         ZooKeeper zooKeeper = ZKConn.getZkClientConnection();
         if(zooKeeper == null){
-            throw new RuntimeException("zookeeper disconnected error");
+            throw new RuntimeException("zookeeper connect  error");
         }
-        zooKeeper.delete(path, version, new AsyncCallback.VoidCallback() {
-            @Override
-            public void processResult(int i, String s, Object o) {
-                System.out.println(i);
-            }
-        },"del node context");
+        zooKeeper.delete(path, version, (i, s, o) -> System.out.println(i),"del node context");
         Thread.sleep(1000);
     }
 
